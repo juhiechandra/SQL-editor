@@ -1,0 +1,26 @@
+[
+  {
+    "supplierID": 4,
+    "companyName": "Tokyo Traders",
+    "contactName": "Yoshi Nagase",
+    "contactTitle": "Marketing Manager"
+  },
+  {
+    "supplierID": 5,
+    "companyName": "Cooperativa de Quesos 'Las Cabras'",
+    "contactName": "Antonio del Valle Saavedra",
+    "contactTitle": "Export Administrator"
+  },
+  {
+    "supplierID": 6,
+    "companyName": "Mayumi's",
+    "contactName": "Mayumi Ohno",
+    "contactTitle": "Marketing Representative"
+  },
+  {
+    "supplierID": 7,
+    "companyName": "Pavlova Ltd.",
+    "contactName": "Ian Devling",
+    "contactTitle": "Marketing Manager"
+  }
+]

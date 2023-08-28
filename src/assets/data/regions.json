@@ -1,0 +1,18 @@
+[
+  {
+    "regionID": 1,
+    "name": "Eastern"
+  },
+  {
+    "regionID": 2,
+    "name": "Western"
+  },
+  {
+    "regionID": 4,
+    "name": "Southern"
+  },
+  {
+    "regionID": 3,
+    "name": "Northern"
+  }
+]
