@@ -1,7 +1,6 @@
 import React, { memo, useCallback, useMemo } from "react";
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-sql";
-// import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/theme-tomorrow_night";
 
 const CodeEditor = ({ setQuery, query, SearchOutputTerminal }) => {

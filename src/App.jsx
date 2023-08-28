@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import "./App.css";
-import { LoaderScreen } from "./components";
+import { NoOutput } from "./components";
 
 // components lazy LoaderScreen
 const Home = React.lazy(() => import("./pages/Home"));
@@ -8,7 +8,7 @@ const Home = React.lazy(() => import("./pages/Home"));
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<LoaderScreen />}>
+      <Suspense fallback={<NoOutput />}>
         <Home />
       </Suspense>
     </div>

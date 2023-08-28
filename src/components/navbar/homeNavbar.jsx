@@ -17,8 +17,10 @@ const HomeNavbar = memo(
       <div className="w-[100%] flex pr-5 items-center h-[50px] flex items-center justify-between relative">
         <div className="flex h-[100%] items-center overflow-x-scroll">
           <div className="bg-[#282c34] h-[100%] p-2 pl-4 flex items-center justify-center justify-between w-[150px]">
-            <div className="hover:underline w-[100px]">
-              <span>Console</span>
+            <div className="">
+              <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                SQL Editor
+              </span>
             </div>
           </div>
         </div>
@@ -48,7 +50,7 @@ const HomeNavbar = memo(
             onChange={(e) => handleFileImport(e)}
           />
           <button
-            className="text-white hover:bg-[#37B34E] focus:ring-4 font-medium rounded-[5px] text-sm bg-[#37B34E] border-[0.5px] border-[#31783E] dark:bg-[#31783E] dark:hover:bg-[#31783E] hover:bg-[#2EAD44] focus:outline-none px-4 py-[5px] flex items-center justify-center"
+            className="text-white hover:bg-[#DA5E31] focus:ring-4 font-medium rounded-[5px] text-sm bg-[#DA5E31] border-[0.5px] border-[#DA5E31] dark:bg-[#DA5E31] dark:hover:bg-[#DA5E31] hover:bg-[#81381d] focus:outline-none px-4 py-[5px] flex items-center justify-center"
             onClick={() => handleSubmit()}
             disabled={query ? false : true}
           >
