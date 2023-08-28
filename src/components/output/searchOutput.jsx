@@ -85,6 +85,48 @@ const SearchOutput = ({ isOutputLoad, outputData }) => {
             <NoOutput />
           </div>
         )}
+        {outputData && (
+          <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 cursor-pointer">
+            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr
+                style={{
+                  backgroundColor: "#212121",
+                  fontSize: "16px",
+                  color: "#DA5E31",
+                }}
+              >
+                {Object.keys(outputData[0]).map((item, index) => (
+                  <th key={index} scope="col" className="px-6 py-3">
+                    {item}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {outputData
+                .filter((item) =>
+                  Object.values(item)
+                    .join(" ")
+                    .toLowerCase()
+                    .includes(searchTerm.toLowerCase())
+                )
+                .map((item, index) => (
+                  <tr
+                    key={index}
+                    className={`bg-white border-b dark:border-gray-700 ${
+                      index % 2 !== 0 ? "dark:bg-gray-800" : "dark:bg-gray-700"
+                    }`}
+                  >
+                    {Object.values(item).map((value, index) => (
+                      <td key={index} className="px-6 py-4">
+                        {value}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );
