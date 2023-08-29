@@ -98,7 +98,6 @@ const AvailableData = memo(
                           {fieldItem}
                           <span className="text-[#1A6EB4]">
                             [{typeof fieldItem}]
-                            <OutboundTwoToneIcon className="w-5 h-5 ml-2" />
                           </span>
                         </li>
                       ))}
