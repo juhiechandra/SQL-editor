@@ -35,6 +35,11 @@ This project is an intuitive **SQL Editor Tool**, built as part of the **Atlan F
 
 ## Demo Video
 
+
+https://github.com/juhiechandra/SQL-editor-Atlan/assets/75068056/564bc1ee-b686-4c7e-882f-2083e99df2d5
+
+
+
 ## Technologies Used
 
 - [React.js](https://reactjs.org/): A JavaScript library for building user interfaces.
