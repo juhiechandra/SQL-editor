@@ -36,7 +36,10 @@ This project is an intuitive **SQL Editor Tool**, built as part of the **Atlan F
 ## Demo Video
 
 
-https://github.com/juhiechandra/SQL-editor-Atlan/assets/75068056/564bc1ee-b686-4c7e-882f-2083e99df2d5
+
+https://github.com/juhiechandra/SQL-editor-Atlan/assets/75068056/57adcb0a-601d-4b60-84cb-19720a39e956
+
+
 
 
 
