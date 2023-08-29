@@ -52,11 +52,30 @@ This project is an intuitive **SQL Editor Tool**, built as part of the **Atlan F
 
 ## Performance Metrics
 
-## Optimization Methods
+![performance](https://github.com/juhiechandra/Atlan-Assignment/blob/main/public/images/performance.png)
+
+Usual improvement methods:
+
+- Code splitting
+- Used Key in Lists
+- Used Memoization
+- Used Fragment
+- Used React.lazy
+- Avoid inline css as much as possible
+- Avoid unnecessary re-renders with useCallback and useMemo
+- Very few extra elements in dom apart from data.json
 
 ## References
 
+- [React Docs](https://reactjs.org/docs/getting-started.html)
+- Programiz SQL Editor for UI and features reference
+- PopSQL webapp for UI and features reference
+- Vite.js Docs
+
 ## Thank Note
+
+To Atlan Team 💫🚀,
+Thank you so much for this opportunity and being patient throughout this assignment.
 
 #### (Commit messages are Optional)
 
