@@ -58,7 +58,7 @@ This project is an intuitive **SQL Editor Tool**, built as part of the **Atlan F
 
 ## Thank Note
 
-#### Commit Messages
+#### (Commit messages are Optional)
 
 | Type | Version Bump | Description and used for |
 | :----: | :---: |-----------------------|
@@ -73,4 +73,3 @@ This project is an intuitive **SQL Editor Tool**, built as part of the **Atlan F
 | docs | none | Documentation |
 | test | none | Adding/improving tests |
 | style | none | Code-style, formatting, white-space, etc |
-(Optional)

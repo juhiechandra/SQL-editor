@@ -9,7 +9,6 @@ import shipperData from "/src/assets/data/shippers.json";
 const dataMap = {
   "select * from categories;": categoryData,
   "select * from customer;": customerData,
-  "select * from orders;": undefined, // No orders.json file found
   "select * from product;": productData,
   "select * from regions;": regionData,
   "select * from shippers;": shipperData,
@@ -20,7 +19,6 @@ export default function useDataFetcher(query) {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState(null);
 
-  // Here we create a callback to fetch the data
   const fetchData = useCallback((query) => {
     setLoading(true);
     try {

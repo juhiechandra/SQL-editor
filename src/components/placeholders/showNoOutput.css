@@ -53,7 +53,7 @@
 
 @keyframes zoom {
     0% {
-        backround-color: black;
+        background-color: black;
     }
     50% {
         background-color: white;

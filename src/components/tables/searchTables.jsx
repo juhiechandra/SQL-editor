@@ -50,64 +50,66 @@ const AvailableData = memo(
       );
 
     return (
-      <div
-        className={`pb-4 relative ${
-          hideTableSearchHistory
-            ? "w-[50px] p-4"
-            : "flex-[0.20] overflow-y-auto"
-        } hidden md:block`}
-        style={{ backgroundColor: "#2C3137" }}
-      >
-        <button
-          onClick={toggleBar}
-          className="absolute p-2 text-sm font-medium focus:outline-none bg-white rounded-[2px] border border-gray-200 hover:bg-gray-100 hover:text-blue-700 z-10 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 w-[40px] h-[40px] flex justify-center items-center top-[12px] right-[8px] outline-none text-[#1E7FD8] border-[#014A92]"
+      <>
+        <div
+          className={`pb-4 relative ${
+            hideTableSearchHistory
+              ? "w-[50px] p-4"
+              : "flex-[0.20] overflow-y-auto"
+          } hidden md:block`}
+          style={{ backgroundColor: "#2C3137" }}
         >
-          {hideTableSearchHistory ? (
-            <StorageTwoToneIcon />
-          ) : (
-            <HighlightOffTwoToneIcon />
+          <button
+            onClick={toggleBar}
+            className="absolute p-2 text-sm font-medium focus:outline-none bg-white rounded-[2px] border border-gray-200 hover:bg-gray-100 hover:text-blue-700 z-10 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 w-[40px] h-[40px] flex justify-center items-center top-[12px] right-[8px] outline-none text-[#1E7FD8] border-[#014A92]"
+          >
+            {hideTableSearchHistory ? (
+              <StorageTwoToneIcon />
+            ) : (
+              <HighlightOffTwoToneIcon />
+            )}
+          </button>
+          {!hideTableSearchHistory && (
+            <div>
+              <div className="pl-5 border-b-[1px] border-[#ffffff33] h-[80px] flex items-center justify-between">
+                <span style={{ fontSize: "24px", fontWeight: "bold" }}>
+                  Available Tables
+                </span>
+              </div>
+              <div className="p-4">
+                {tableMeta.map(({ name, fields }) => (
+                  <div key={name} className="mb-4">
+                    <span
+                      onClick={handleClick(name)}
+                      className="flex items-center cursor-pointer"
+                      style={{ fontSize: "1.2rem", gap: "10px" }}
+                    >
+                      <SchemaTwoToneIcon className="w-5 h-5 ml-2" />
+                      {name}
+                    </span>
+                    <ul>
+                      {fields.map((fieldItem) => (
+                        <li
+                          key={fieldItem}
+                          className="text-sm cursor-pointer"
+                          onClick={handleClick(name, fieldItem)}
+                          style={{ fontSize: "1rem", padding: "8px" }}
+                        >
+                          {fieldItem}
+                          <span className="text-[#1A6EB4]">
+                            [{typeof fieldItem}]
+                            <OutboundTwoToneIcon className="w-5 h-5 ml-2" />
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
           )}
-        </button>
-        {!hideTableSearchHistory && (
-          <div>
-            <div className="pl-5 border-b-[1px] border-[#ffffff33] h-[80px] flex items-center justify-between">
-              <span style={{ fontSize: "24px", fontWeight: "bold" }}>
-                Available Tables
-              </span>
-            </div>
-            <div className="p-4">
-              {tableMeta.map(({ name, fields }) => (
-                <div key={name} className="mb-4">
-                  <span
-                    onClick={handleClick(name)}
-                    className="flex items-center cursor-pointer"
-                    style={{ fontSize: "1.5rem", gap: "10px" }}
-                  >
-                    <SchemaTwoToneIcon className="w-5 h-5 ml-2" />
-                    {name}
-                  </span>
-                  <ul>
-                    {fields.map((fieldItem) => (
-                      <li
-                        key={fieldItem}
-                        className="text-sm cursor-pointer"
-                        onClick={handleClick(name, fieldItem)}
-                        style={{ fontSize: "1.2rem", padding: "8px" }}
-                      >
-                        {fieldItem}
-                        <span className="text-[#1E7FD8]">
-                          [{typeof fieldItem}]
-                          <OutboundTwoToneIcon className="w-5 h-5 ml-2" />
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+        </div>
+      </>
     );
   }
 );
