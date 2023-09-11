@@ -1,9 +1,5 @@
 # SQL Editor
 
-#### Submitted to Atlan FE Role
-
-![atlan logo](https://github.com/juhiechandra/Atlan-Assignment/blob/main/public/images/atlan.jpg)
-
 ## Table of Contents
 
 1. [About the Project](#about-the-project)
@@ -18,7 +14,7 @@
 
 ## About the Project
 
-This project is an intuitive **SQL Editor Tool**, built as part of the **Atlan Frontend Engineering assignment**. It provides a comprehensive solution for **executing SQL queries, analyzing data, and managing database operations effectively.**
+This project is an intuitive **SQL Editor Tool**. It provides a comprehensive solution for **executing SQL queries, analyzing data, and managing database operations effectively.**
 
 ## Features
 
